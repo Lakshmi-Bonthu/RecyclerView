@@ -14,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize RecyclerView
+        // Initializing RecyclerView
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
 
-        // Sample data
+
         val itemList = List(14) { index ->
             Item(
                 imageResId = R.drawable.ic_launcher_foreground, // Set a default image or your own
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        // Set up RecyclerView with Adapter
+        // Setting  RecyclerView with Adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = RecyclerViewAdapter(this, itemList)
     }

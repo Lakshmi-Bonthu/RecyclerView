@@ -21,9 +21,9 @@ class RecyclerViewAdapter(
         val textTextView: TextView = itemView.findViewById(R.id.textTextView)
 
         init {
-            // Set click listener for each item
+
             itemView.setOnClickListener {
-                // Show toast with the heading of the clicked item
+
                 val heading = itemList[adapterPosition].heading
                 Toast.makeText(context, "You clicked: $heading", Toast.LENGTH_SHORT).show()
             }
